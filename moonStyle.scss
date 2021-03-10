@@ -3,14 +3,22 @@
     margin: 0;
 }
 
-// .container{
-//     display:flex;
-//     flex-direction:column;
-//     align-items:center;
-//     position: relative;
-//     max-width: 1140px;
-//     overflow: hidden;
-// }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(15, 37, 58);
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position: relative;
+    max-width: 1140px;                   
+    // overflow: hidden;
+}
 
 .slider{
     display: flex;
@@ -44,6 +52,8 @@ h1{
 }
 h3{
     font-family: 'Merriweather', serif;
+    text-decoration-line: underline;
+    text-decoration-color:rgb(10, 143, 125);
     font-size: 25px;
     color: white;
 }
@@ -59,4 +69,21 @@ p{
     height: 585px;
     width: 1140px;
     overflow: hidden;
+}
+
+button{
+    margin-left: 20px;
+    margin-top: 5px;
+    border-style: none;
+    background:none;
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+}    
+.movement{
+    color: rgb(10, 143, 125);
+    
+}
+.midButton{
+    color: white;
+    text-decoration-line:underline ;
 }
