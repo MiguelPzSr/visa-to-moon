@@ -8,13 +8,13 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(15, 37, 58);
+    background-color: rgb(23, 75, 82);
 }
 
 .container{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    // display:flex;
+    // flex-direction:column;
+    // align-items:center;
     position: relative;
     max-width: 1140px;                   
     // overflow: hidden;
@@ -32,8 +32,12 @@ body{
     background-image: url(./assets/images/rock.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 585px;
+    background-attachment:initial;
+    background-position: bottom;
+    height: 550px;
     width: 1140px;
+    justify-content: center;
+    
 }
 h1{
     font-family: 'Montserrat', sans-serif;
@@ -47,7 +51,9 @@ h1{
     background-image: url(./assets/images/background.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    height: 585px;
+    background-attachment:initial;
+    background-position: bottom;
+    height: 550px;
     width: 1140px;
 }
 h3{
@@ -66,11 +72,22 @@ p{
     background-image: url(./assets/images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 585px;
+    background-attachment:initial;
+    background-position: bottom;
+    height: 550px;
     width: 1140px;
     overflow: hidden;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
 }
 
+.buttons{
+    background-color: rgb(15, 37, 58);
+    padding-right: 70px;
+    padding-left: 55px;
+    padding-bottom: 10px;
+}
 button{
     margin-left: 20px;
     margin-top: 5px;

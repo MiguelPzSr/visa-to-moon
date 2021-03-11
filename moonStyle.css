@@ -17,20 +17,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #0f253a;
+  background-color: #174b52;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
   max-width: 1140px;
 }
@@ -59,8 +49,13 @@ body {
   background-image: url(./assets/images/rock.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 585px;
+  background-attachment: initial;
+  background-position: bottom;
+  height: 550px;
   width: 1140px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h1 {
@@ -83,7 +78,9 @@ h1 {
   background-image: url(./assets/images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 585px;
+  background-attachment: initial;
+  background-position: bottom;
+  height: 550px;
   width: 1140px;
 }
 
@@ -107,9 +104,27 @@ p {
   background-image: url(./assets/images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 585px;
+  background-attachment: initial;
+  background-position: bottom;
+  height: 550px;
   width: 1140px;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttons {
+  background-color: #0f253a;
+  padding-right: 70px;
+  padding-left: 55px;
+  padding-bottom: 10px;
 }
 
 button {
