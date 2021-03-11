@@ -59,6 +59,7 @@ body {
 }
 
 h1 {
+  padding-left: 30px;
   font-family: 'Montserrat', sans-serif;
   font-size: 60px;
   color: white;
@@ -98,6 +99,11 @@ p {
   font-family: 'Merriweather', serif;
   font-size: 20px;
   color: white;
+}
+
+h3, p, .rocket {
+  padding-left: 25px;
+  padding-top: 7px;
 }
 
 .p3 {
