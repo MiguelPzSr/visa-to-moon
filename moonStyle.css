@@ -1,152 +1,157 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #174b52;
+  width: 100vw;
+  height: 100vh;
+  background-color: #16878C;
 }
 
-.container {
-  position: relative;
-  max-width: 1140px;
+body main {
+  width: inherit;
+  height: inherit;
 }
 
-.slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+body main .slider {
+  padding: 1.5vh 5vw 1.5vh 0vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+  -ms-grid-rows: 65vh 22vh 10vh;
+      grid-template-rows: 65vh 22vh 10vh;
+  width: inherit;
+  height: inherit;
 }
 
-.p1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-image: url(./assets/images/rock.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: initial;
-  background-position: bottom;
-  height: 550px;
-  width: 1140px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-h1 {
-  padding-left: 30px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 60px;
+body main .slider h1 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  z-index: 1;
+  font-family: "Montserrat", sans-serif;
   color: white;
+  font-size: 6rem;
 }
 
-.p2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-image: url(./assets/images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: initial;
-  background-position: bottom;
-  height: 550px;
-  width: 1140px;
+body main .slider .p1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/ 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/ 3;
 }
 
-h3 {
+body main .slider .p1 .rock {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100%;
+     object-position: 100%;
+}
+
+body main .slider .p1 .logo {
+  position: absolute;
+}
+
+body main .slider .trip {
+  padding: 10vh 2.5vw;
+  z-index: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/ 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/ 2;
+}
+
+body main .slider .trip .rocket {
+  width: 8vw;
+}
+
+body main .slider .trip .lema {
+  color: white;
+  font-size: 2.3em;
   font-family: 'Merriweather', serif;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  -webkit-text-decoration-color: #0a8f7d;
-          text-decoration-color: #0a8f7d;
-  font-size: 25px;
+}
+
+body main .slider .trip .tags {
   color: white;
+  font-size: 1.3rem;
 }
 
-p {
-  font-family: 'Merriweather', serif;
-  font-size: 20px;
-  color: white;
+body main .slider .p2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/ 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/ 3;
 }
 
-h3, p, .rocket {
-  padding-left: 25px;
-  padding-top: 7px;
+body main .slider .p2 .background {
+  width: 100%;
+  height: 100%;
 }
 
-.p3 {
-  background-image: url(./assets/images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: initial;
-  background-position: bottom;
-  height: 550px;
-  width: 1140px;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+body main .slider .p3 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/ 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/ 3;
 }
 
-.buttons {
-  background-color: #0f253a;
-  padding-right: 70px;
-  padding-left: 55px;
-  padding-bottom: 10px;
+body main .slider .p3 .launch {
+  position: absolute;
+  top: 1.5vh;
+  height: 65vh;
+  width: 28.7vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 35%;
+     object-position: 35%;
 }
 
-button {
-  margin-left: 20px;
-  margin-top: 5px;
+body main .slider .buttons {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/ 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/ 4;
+  background-color: #172e3a;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .slider .buttons button {
   border-style: none;
   background: none;
   font-family: 'Merriweather', serif;
-  font-size: 25px;
+  font-size: 2rem;
 }
 
-.movement {
+body main .slider .buttons .movement {
   color: #0a8f7d;
 }
 
-.midButton {
+body main .slider .buttons .midButton {
   color: white;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;

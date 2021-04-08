@@ -1,114 +1,237 @@
+$body: #16878C;
+$colortext: white;
+$colorBackgroundMisil: #2e7863;
+$primary-font-family: 'Montserrat', sans-serif;
+$color-button-slider: #172e3a;
+$color-text-button: #5fe8bd;
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(23, 75, 82);
+    width: 100vw;
+    height: 100vh;
+    background-color: $body;
+
+    main{
+        width: inherit;
+        height: inherit;
+
+        
+        .slider{
+            padding: 1.5vh 5vw 1.5vh 0vw;
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: 65vh 22vh 10vh;
+            width: inherit;
+            height: inherit;
+            
+            h1{
+                justify-self:center;
+                align-self: flex-end;
+                grid-column: 1/ 3;
+                grid-row: 1/2;
+                z-index: 1;
+                font-family: $primary-font-family;
+                color: white;
+                font-size: 6rem;
+            }
+            .p1{
+                grid-column: 1/ 2;
+                grid-row: 1/ 3;
+                
+                .rock{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 100%;
+                }
+                .logo{
+                    position: absolute;
+                }
+   
+            }
+            .trip{
+                padding: 10vh 2.5vw;
+                z-index: 1;
+                grid-column: 2/ 3;
+                grid-row: 1/ 2;
+
+                .rocket{
+                    width: 8vw;
+                }
+                .lema{
+                    color: white;
+                    font-size: 2.3em;
+                    font-family: 'Merriweather', serif;
+                }
+                .tags{
+                    color: white;
+                    font-size:1.3rem
+                }
+            }
+            .p2{
+                grid-column: 2/ 5;
+                grid-row: 1/ 3;
+
+                .background{
+                    width: 100%;
+                    height: 100%;  
+                }
+            }
+            .p3{
+                grid-column: 4/ 5;
+                grid-row: 1/ 3;
+
+                
+                .launch{
+                    position: absolute;
+                    top: 1.5vh;
+                    height: 65vh;
+                    width: 28.7vw;
+                    object-fit: cover;
+                    object-position: 35%;
+                }
+            }
+            .buttons{
+                grid-column: 3/ 4;
+                grid-row: 2/ 4;
+                background-color: $color-button-slider;
+                justify-content:space-between ;
+                
+                button{              
+                    border-style: none;
+                    background:none;
+                    font-family: 'Merriweather', serif;
+                    font-size: 2rem;
+                    
+                }
+                .movement{
+                    color: rgb(10, 143, 125);
+                    
+                }
+                .midButton{
+                    color: white;
+                    text-decoration-line:underline ;
+                }
+            }
+        }
+    }
 }
 
-.container{
-    // display:flex;
-    // flex-direction:column;
-    // align-items:center;
-    position: relative;
-    max-width: 1140px;                   
-    // overflow: hidden;
-}
 
-.slider{
-    display: flex;
-    flex-direction: row;
-}
+// body{
+//     // display: flex;
+//     // align-items: center;
+//     // justify-content: center;
+//     // flex-direction: column;
+//     background-color: rgb(23, 75, 82);
+// }
 
-.p1{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(./assets/images/rock.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:initial;
-    background-position: bottom;
-    height: 550px;
-    width: 1140px;
-    justify-content: center; 
-}
-h1{
-    padding-left: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
-    color: white;
-}
+// .container{
+//     // display: flex;
+//     // grid-template-rows: repeat(4/ 25%);
+//     // flex-direction:column;
+//     // align-items:center;
+//     position: relative;
+//     max-width: 1140px;                   
+//     // overflow: hidden;
+// }
 
+// .slider{
+//     display: grid;
+//     // flex-direction: row;
+//     grid-template-columns: repeat(4/ 25%);
+// }
 
-.p2{
-    display: flex;
-    align-items:flex-start;
-    flex-direction: column;
-    background-image: url(./assets/images/background.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment:initial;
-    background-position: bottom;
-    height: 550px;
-    width: 1140px;
-}
-h3{
-    font-family: 'Merriweather', serif;
-    text-decoration-line: underline;
-    text-decoration-color:rgb(10, 143, 125);
-    font-size: 25px;
-    color: white;
-}
-p{
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
-    color: white;
-}
-h3, p, .rocket{
-    padding-left: 25px;
-    padding-top: 7px;
-}
+// .p1{
+//     grid-row: 1/ span 2;
+//     // display: flex;
+//     // align-items: center;
+//     // flex-direction: column;
+//     background-image: url(./assets/images/rock.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-attachment:initial;
+//     background-position: bottom;
+//     height: 550px;
+//     width: 1140px;
+//     // justify-content: center; 
+// }
+// h1{
+//     padding-left: 30px;
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: 60px;
+//     color: white;
+// }
 
 
-.p3{
-    background-image: url(./assets/images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:initial;
-    background-position: bottom;
-    height: 550px;
-    width: 1140px;
-    overflow: hidden;
-    display: flex;
-    align-items:flex-start;
-    justify-content: center;
-}
+// .p2{
+//     // display: flex;
+//     // align-items:flex-start;
+//     // flex-direction: column;
+//     background-image: url(./assets/images/background.jpg);
+//     background-repeat: no-repeat;
+//     background-size:cover;
+//     background-attachment:initial;
+//     background-position: bottom;
+//     height: 550px;
+//     width: 1140px;
+// }
+// h3{
+//     font-family: 'Merriweather', serif;
+//     text-decoration-line: underline;
+//     text-decoration-color:rgb(10, 143, 125);
+//     font-size: 25px;
+//     color: white;
+// }
+// p{
+//     font-family: 'Merriweather', serif;
+//     font-size: 20px;
+//     color: white;
+// }
+// h3, p, .rocket{
+//     padding-left: 25px;
+//     padding-top: 7px;
+// }
 
-.buttons{
-    background-color: rgb(15, 37, 58);
-    padding-right: 70px;
-    padding-left: 55px;
-    padding-bottom: 10px;
-}
-button{
-    margin-left: 20px;
-    margin-top: 5px;
-    border-style: none;
-    background:none;
-    font-family: 'Merriweather', serif;
-    font-size: 25px;
-}    
-.movement{
-    color: rgb(10, 143, 125);
+
+// .p3{
+//     background-image: url(./assets/images/background.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-attachment:initial;
+//     background-position: bottom;
+//     height: 550px;
+//     width: 1140px;
+//     // overflow: hidden;
+//     // display: flex;
+//     // align-items:flex-start;
+//     // justify-content: center;
+// }
+
+// .buttons{
+//     background-color: rgb(15, 37, 58);
+//     padding-right: 70px;
+//     padding-left: 55px;
+//     padding-bottom: 10px;
+// }
+// button{
+//     margin-left: 20px;
+//     margin-top: 5px;
+//     border-style: none;
+//     background:none;
+//     font-family: 'Merriweather', serif;
+//     font-size: 25px;
+// }    
+// .movement{
+//     color: rgb(10, 143, 125);
     
-}
-.midButton{
-    color: white;
-    text-decoration-line:underline ;
-}
+// }
+// .midButton{
+//     color: white;
+//     text-decoration-line:underline ;
+// }
