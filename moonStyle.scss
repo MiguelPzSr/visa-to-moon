@@ -1,9 +1,10 @@
-$body: #16878C;
+$body: rgb(23, 75, 82);
 $colortext: white;
-$colorBackgroundMisil: #2e7863;
+$colorBackgroundMisil: rgb(10, 143, 125);
 $primary-font-family: 'Montserrat', sans-serif;
-$color-button-slider: #172e3a;
-$color-text-button: #5fe8bd;
+$secundary-font-family: 'Merriweather', serif;
+$color-button-slider: rgb(15, 37, 58);
+$color-text-button: rgb(10, 143, 125);
 
 *{
     padding: 0;
@@ -36,8 +37,9 @@ body{
                 grid-row: 1/2;
                 z-index: 1;
                 font-family: $primary-font-family;
-                color: white;
+                color: $colortext;
                 font-size: 6rem;
+                margin-left: 22vh;
             }
             .p1{
                 grid-column: 1/ 2;
@@ -51,11 +53,13 @@ body{
                 }
                 .logo{
                     position: absolute;
+                    margin: 11vh;
+                    width: 14vw;
                 }
    
             }
             .trip{
-                padding: 10vh 2.5vw;
+                padding: 7vh 2.5vw;
                 z-index: 1;
                 grid-column: 2/ 3;
                 grid-row: 1/ 2;
@@ -64,13 +68,23 @@ body{
                     width: 8vw;
                 }
                 .lema{
-                    color: white;
+                    color: $colortext;
                     font-size: 2.3em;
-                    font-family: 'Merriweather', serif;
+                    font-family: $secundary-font-family;
+                }
+                hr{
+                    height: 5px;
+                    width: 40%;
+                    background-color: $colorBackgroundMisil;
+                    border: none;
+                    margin-top: 1vh;
+                    margin-bottom: 1vh;
                 }
                 .tags{
-                    color: white;
-                    font-size:1.3rem
+                    color: $colortext;
+                    font-size:1.8rem;
+                    font-family: $secundary-font-family;
+                    font-style: italic;
                 }
             }
             .p2{
@@ -96,25 +110,40 @@ body{
                     object-position: 35%;
                 }
             }
+            .load{
+                grid-column: 3/ 4;
+                grid-row: 2/3;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                progress {
+                    width: 15vw;
+                    height: 0.7vh;
+                }
+            }
             .buttons{
                 grid-column: 3/ 4;
                 grid-row: 2/ 4;
                 background-color: $color-button-slider;
-                justify-content:space-between ;
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-end;
                 
                 button{              
                     border-style: none;
                     background:none;
-                    font-family: 'Merriweather', serif;
+                    font-family: $secundary-font-family;
                     font-size: 2rem;
-                    
+                    margin-bottom: 3vh;
                 }
                 .movement{
-                    color: rgb(10, 143, 125);
+                    color: $color-text-button;
                     
                 }
                 .midButton{
-                    color: white;
+                    color: $colortext;
                     text-decoration-line:underline ;
                 }
             }

@@ -8,7 +8,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #16878C;
+  background-color: #174b52;
 }
 
 body main {
@@ -43,6 +43,7 @@ body main .slider h1 {
   font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 6rem;
+  margin-left: 22vh;
 }
 
 body main .slider .p1 {
@@ -65,10 +66,12 @@ body main .slider .p1 .rock {
 
 body main .slider .p1 .logo {
   position: absolute;
+  margin: 11vh;
+  width: 14vw;
 }
 
 body main .slider .trip {
-  padding: 10vh 2.5vw;
+  padding: 7vh 2.5vw;
   z-index: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -85,12 +88,23 @@ body main .slider .trip .rocket {
 body main .slider .trip .lema {
   color: white;
   font-size: 2.3em;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
+}
+
+body main .slider .trip hr {
+  height: 5px;
+  width: 40%;
+  background-color: #0a8f7d;
+  border: none;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
 body main .slider .trip .tags {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
+  font-family: "Merriweather", serif;
+  font-style: italic;
 }
 
 body main .slider .p2 {
@@ -127,6 +141,30 @@ body main .slider .p3 .launch {
      object-position: 35%;
 }
 
+body main .slider .load {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/ 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .slider .load progress {
+  width: 15vw;
+  height: 0.7vh;
+}
+
 body main .slider .buttons {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -134,17 +172,23 @@ body main .slider .buttons {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2/ 4;
-  background-color: #172e3a;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background-color: #0f253a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 body main .slider .buttons button {
   border-style: none;
   background: none;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 2rem;
+  margin-bottom: 3vh;
 }
 
 body main .slider .buttons .movement {
